@@ -13,10 +13,10 @@ end
 Then(/I should see results pertaining to "([^"]*)"/) do |search_term|
   on(SearchResultsPage).result_links.each do |link|
     @browser.goto(link)
-    @browser.text.downcase.should include search_term.downcase
+    expect(@browser.text.downcase).to include search_term.downcase
   end
 end
 
 Then(/^I should see the quick results menu$/) do
-  on(HomePage).quick_results.when_present(3).should exist
+  expect(on(HomePage).quick_results.when_present(3)).to exist
 end

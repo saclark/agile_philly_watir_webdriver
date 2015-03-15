@@ -9,7 +9,7 @@ end
 Then(/I should see events pertaining to the "([^"]*)" track/) do |track_name|
   on(EventsCalendarPage).event_listings.each do |event_listing|
     if event_listing.visible?
-      event_listing.link(:text => "#{track_name} Track").should exist
+      expect(event_listing.link(:text => "#{track_name} Track")).to exist
     end
   end
 end
