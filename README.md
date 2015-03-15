@@ -53,16 +53,16 @@ This step is not required, but makes test results readable from the command line
 ## Cucumber Project Structure
 The basic structure:
 ```
-| my_project
+| example_project
 |---- features/
 |-------- step_definitions/
-|------------ login_steps.feature
+|------------ example_steps.feature
 |-------- support/
 |------------ env.rb
 |------------ hooks.rb
 |------------ pages/
-|--------------- login_page.rb
-|-------- login.feature
+|--------------- example_page.rb
+|-------- example.feature
 |---- cucumber.yml
 |---- Gemfile
 ```
