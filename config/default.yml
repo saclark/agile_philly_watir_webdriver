@@ -1,0 +1,5 @@
+base_url: "http://2015.phillytechweek.com/"
+browser_vendor: "firefox"
+directories:
+  results: "results"
+  screenshots: "screenshots"
