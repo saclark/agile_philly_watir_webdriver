@@ -1,10 +1,10 @@
 # load our gems
-require 'watir-webdriver'
 require 'cucumber'
 require 'rspec'
 require 'rspec/expectations'
-require 'accessible'
+require 'watir-webdriver'
 require 'lite_page'
+require 'accessible'
 require 'pry'
 require 'pry-byebug'
 
@@ -12,6 +12,14 @@ require 'pry-byebug'
 class TestConfig
   include Accessible
   load 'config/default.yml'
+end
+
+# Not necessary, but convenient: creates directories for holding
+# our results and screenshots (defined in config) if they don't already exist
+TestConfig.directories.each do |type, location|
+  if [:results, :screenshots].include?(type.to_sym)
+    Dir.mkdir(location) unless File.directory?(location)
+  end
 end
 
 # make `on` and `visit` methods from LitePage gem

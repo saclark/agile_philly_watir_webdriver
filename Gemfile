@@ -1,20 +1,23 @@
 source 'http://rubygems.org'
 
-gem 'watir-webdriver'
+# https://cukes.info/
 gem 'cucumber'
 
-# For assertions (e.g. `1.should == 1`)
+# For assertions (e.g. `expect(1).to eq(1)`)
 # https://github.com/rspec/rspec-expectations
 gem 'rspec'
 gem 'rspec-expectations'
 
-# For configuration
-# https://github.com/saclark/accessible
-gem 'accessible'
+# http://watirwebdriver.com/
+gem 'watir-webdriver'
 
 # For creating and interacting with page objects
 # https://github.com/saclark/lite_page
 gem 'lite_page'
+
+# For configuration
+# https://github.com/saclark/accessible
+gem 'accessible'
 
 # For debugging (not needed if using an IDE with a proper debugger)
 # https://github.com/pry/pry

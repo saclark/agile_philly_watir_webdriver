@@ -1,11 +1,3 @@
-# Not necessary, but convenient: creates directories for holding
-# our results and screenshots (defined in config) if they don't already exist
-TestConfig.directories.each do |type, location|
-  if [:results, :screenshots].include?(type.to_sym)
-    Dir.mkdir(location) unless File.directory?(location)
-  end
-end
-
 # This gets executed before each individual scenario is run
 Before do
   # Instantiate the browser
