@@ -5,7 +5,6 @@ gem 'cucumber'
 
 # For assertions (e.g. `expect(1).to eq(1)`)
 # https://github.com/rspec/rspec-expectations
-gem 'rspec'
 gem 'rspec-expectations'
 
 # http://watirwebdriver.com/

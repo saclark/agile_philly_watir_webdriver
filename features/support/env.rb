@@ -1,6 +1,5 @@
 # load our gems
 require 'cucumber'
-require 'rspec'
 require 'rspec/expectations'
 require 'watir-webdriver'
 require 'lite_page'
