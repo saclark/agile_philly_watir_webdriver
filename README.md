@@ -16,7 +16,6 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 - Download the latest _32 bit_ version of ruby (_Not_ x64) from here: [http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/)
     - Run the installation wizard and check only the following boxes when prompted:
         - "Add Ruby executables to your PATH"
-        - "Associate .rb and .rbw files with this Ruby installation"
 
 - Install DevKit
     - Download the appropriate Development Kit for the version of Ruby you installed: [http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/)
