@@ -3,7 +3,9 @@ class SearchResultsPage
 
   page_url("#{TestConfig.base_url}/search")
 
-  div(:results_section, :class => 'full-search-results')
+  def_elements(:@browser, {
+    :results_section => [:div, :class => 'full-search-results']
+  })
 
   def result_links
     self.results_section.links.map do |link|

@@ -12,11 +12,11 @@ gem 'watir-webdriver'
 
 # For creating and interacting with page objects
 # https://github.com/saclark/lite_page
-gem 'lite_page'
+gem 'lite_page', '~> 1.1'
 
 # For configuration
 # https://github.com/saclark/accessible
-gem 'accessible'
+gem 'accessible', '~> 0.2'
 
 # For debugging (not needed if using an IDE with a proper debugger)
 # https://github.com/pry/pry

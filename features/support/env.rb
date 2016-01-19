@@ -8,9 +8,8 @@ require 'pry'
 require 'pry-byebug'
 
 # setup configuration class and load config data
-class TestConfig
-  include Accessible
-  load 'config/default.yml'
+TestConfig ||= Accessible.create do |config|
+  config.load('config/default.yml')
 end
 
 # Not necessary, but convenient: creates directories for holding

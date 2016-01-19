@@ -3,7 +3,9 @@ class EventsCalendarPage
 
   page_url("#{TestConfig.base_url}/events#view=block")
 
-  articles(:event_listings, :class => 'event-listing')
+  def_elements(:@browser, {
+    :event_listings => [:articles, :class => 'event-listing']
+  })
 
   def select_track(track_name)
     @browser.button(:class => 'filter', :text => track_name).click

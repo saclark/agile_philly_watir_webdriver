@@ -3,8 +3,10 @@ class HomePage
 
   page_url(TestConfig.base_url)
 
-  text_field(:search_bar, :id => 'nav-search')
-  ul(:quick_results, :class => 'search-results')
+  def_elements(:@browser, {
+    :search_bar => [:text_field, :id => 'nav-search'],
+    :quick_results => [:ul, :class => 'search-results']
+  })
 
   def search_for(search_term)
     self.search_bar.set(search_term)

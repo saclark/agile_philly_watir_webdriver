@@ -5,5 +5,7 @@ tmp
 private
 results/
 screenshots/
+vendor/
+.bundle/
 *.png
 *.log
